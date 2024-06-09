@@ -6,3 +6,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.menu .dropdown{
+    display: none;
+    transition: all 0.8s;
+}
+
+.menu:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+    height: auto;
+}
+
+.menu:hover .dropdown{
+    display: block;
+}
