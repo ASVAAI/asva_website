@@ -22,3 +22,20 @@
 .menu:hover .dropdown{
     display: block;
 }
+
+@media (min-width:768px){
+    .mgl{
+        margin-left: 305px;
+    }
+}
+
+.slick-slide > div{
+    margin: 0 10px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.slick-track {
+    height: 100%;
+}
