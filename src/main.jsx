@@ -59,7 +59,7 @@ const router = createHashRouter([
         ),
       },
       {
-        path: '/signup',
+        path: 'signup',
         element: (
           <Suspense fallback={<div className='w-full text-center'>Loading...</div>}>
             <SignUp />
@@ -67,7 +67,7 @@ const router = createHashRouter([
         ),
       },
       {
-        path: '/login',
+        path: 'login',
         element: (
           <Suspense fallback={<div className='w-full text-center'>Loading...</div>}>
             <Login />
