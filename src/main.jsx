@@ -9,6 +9,8 @@ const Solution = React.lazy(() => import('./component/Solution'));
 const Pricing = React.lazy(() => import('./component/Pricing'));
 const Blog = React.lazy(() => import('./component/Blog'));
 const ContactUs = React.lazy(() => import('./component/Contact_Us'));
+const SignUp = React.lazy(()=>import('./pages/SignUpPage'));
+const Login = React.lazy(()=>import('./pages/LoginPage'));
 
 
 const router = createHashRouter([
@@ -53,6 +55,22 @@ const router = createHashRouter([
         element: (
           <Suspense fallback={<div className='w-full text-center'>Loading...</div>}>
             <ContactUs />
+          </Suspense>
+        ),
+      },
+      {
+        path: '/signup',
+        element: (
+          <Suspense fallback={<div className='w-full text-center'>Loading...</div>}>
+            <SignUp />
+          </Suspense>
+        ),
+      },
+      {
+        path: '/login',
+        element: (
+          <Suspense fallback={<div className='w-full text-center'>Loading...</div>}>
+            <Login />
           </Suspense>
         ),
       },

@@ -79,15 +79,15 @@ const Navbar = () => {
         </div>
         <div className="hidden md:flex md:justify-center md:items-center space-x-4">
           <Link
-            to="#"
-            onClick={handleLogin}
+            to="/login"
+            // onClick={handleLogin}
             className="md:flex md:justify-center md:items-center hover:bg-violet-700 hover:text-white text-violet-500 border border-violet-700 h-10 font-medium py-6 px-8 rounded-md transition-all duration-150"
           >
             Login
           </Link>
           <Link
-            to="#"
-            onClick={handleSign}
+            to="/signup"
+            // onClick={handleSign}
             className="md:flex md:justify-center md:items-center bg-violet-700 hover:bg-violet-500 text-white font-medium py-6 h-10 px-8 rounded-md transition-all duration-150"
           >
             Signup
@@ -130,15 +130,15 @@ const Navbar = () => {
           </div>
           <div className="flex flex-col space-y-4 mt-5 justify-center items-center">
             <Link
-              to="#"
-              onClick={handleLogin}
+              to="/login"
+              // onClick={handleLogin}
               className="flex justify-center items-center hover:bg-violet-700 hover:text-white text-violet-500 border-2 border-violet-700 h-10 font-medium py-2 px-8 rounded-md transition-all duration-150"
             >
               Login
             </Link>
             <Link
-              to="#"
-              onClick={handleSign}
+              to="/signup"
+              // onClick={handleSign}
               className="flex justify-center items-center bg-violet-700 hover:bg-violet-500 text-white font-medium py-2 h-10 px-8 rounded-md transition-all duration-"
             >
               Signup
