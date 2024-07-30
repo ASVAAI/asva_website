@@ -79,14 +79,14 @@ const Navbar = () => {
         </div>
         <div className="hidden md:flex md:justify-center md:items-center space-x-4">
           <Link
-            to="/login"
+            to="https://apps.asvaai.com/"
             // onClick={handleLogin}
             className="md:flex md:justify-center md:items-center hover:bg-violet-700 hover:text-white text-violet-500 border border-violet-700 h-10 font-medium py-6 px-8 rounded-md transition-all duration-150"
           >
             Login
           </Link>
           <Link
-            to="/signup"
+            to="https://apps.asvaai.com/"
             // onClick={handleSign}
             className="md:flex md:justify-center md:items-center bg-violet-700 hover:bg-violet-500 text-white font-medium py-6 h-10 px-8 rounded-md transition-all duration-150"
           >

@@ -5,7 +5,7 @@ import Login from '../component/Login'
 function LoginPage() {
   return (
     <>
-        <section>
+        <section className=' '>
             <Login/>
         </section>
     </>
