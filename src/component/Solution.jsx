@@ -202,7 +202,7 @@ const Home = () => {
     },
     {
       title: "Professional",
-      price: 99,
+      price: 75,
       description: "Purchase credites to independently integrate our API's",
       features: [
         {

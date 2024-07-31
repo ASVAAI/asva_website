@@ -44,11 +44,11 @@ const Pricing = () => {
         <h2 className='text-xl text-gray-500 mb-10 px-5 font-semibold text-center'>Select from developer plans that are ready to use or bespoke enterprise plans. Start cutting costs and increasing performance right now.</h2>
         <div className='grid items-start grid-cols-1 md:grid-cols-3 gap-8'>
           <div className=' rounded-md cursor-pointer shadow-lg w-5/6 flex flex-col mx-auto items-center border-2 border-gray-50'>
-            <div className='py-3 bg-gray-200 flex  justify-center rounded-t-md items-center text-lg font-semibold w-full'>Developer</div>
+            <div className='py-3 bg-gray-200 flex  justify-center rounded-t-md items-center text-lg font-semibold w-full'>Individual</div>
             <div className='py-8 w-full'>
               <h1 className='text-lg text-center font-semibold pb-5'>Asva AI Cloud (SaaS)</h1>
               <div className='text-start px-4 pb-5'>
-                <p className=''><span className='font-semibold text-gray-600'>Pricing:</span> Pay-as-you-go.</p>
+                <p className=''><span className='font-semibold text-gray-600'>Pricing:</span> Pay-as-you-go - intially free</p>
               </div>
               <div className='text-start px-4 pb-5'>
                 <ul className='font-semibold text-gray-600 list-decimal'>Fine-Tune LLMs
@@ -63,10 +63,10 @@ const Pricing = () => {
                 </ul>
               </div>
               <div className='text-start px-4 pb-5'>
-                <p className=''><span className='font-semibold text-lg text-gray-600'>Performace:</span> 100 requests per second.</p>
+                <p className=''><span className='font-semibold text-lg text-gray-600'>Performace:</span> Limited</p>
               </div>
               <div className='text-start px-4 pb-5'>
-                <p className=''><span className='font-semibold text-lg text-gray-600'>Concurrent training jobs:</span> Limited to 2d.</p>
+                <p className=''><span className='font-semibold text-lg text-gray-600'>Concurrent training jobs:</span> Limited </p>
               </div>
               <div className='text-start px-4 pb-5'>
                 <p className=''><span className='font-semibold text-lg text-gray-600'>Customer support:</span> Discord, chat and email.</p>
@@ -74,7 +74,7 @@ const Pricing = () => {
               <div className='flex flex-col items-center justify-center'>
                 <a href="https://calendly.com/v-inaniyan12/30min">
                   <button className='px-7 py-3 rounded-md text-white bg-violet-700'>
-                    Get Started with $25 Free Credits
+                    Get Started with a free demo
                   </button>
                 </a>
                 <p className='text-xs mt-1'><span className='font-semibold text-gray-600'>Note: </span> Free credits expire after 30 days.</p>
@@ -112,7 +112,7 @@ const Pricing = () => {
               <div className='flex justify-center'>
                 <a href="https://calendly.com/v-inaniyan12/30min">
                   <button className='px-7 py-3 rounded-md text-white bg-violet-700'>
-                    Contact Sales
+                    Get Started with $75/month
                   </button>
                 </a>
               </div>
@@ -148,7 +148,7 @@ const Pricing = () => {
               <div className='flex justify-center'>
                 <a href="https://calendly.com/v-inaniyan12/30min">
                   <button className='px-7 py-3 rounded-md text-white bg-violet-700'>
-                    Contact Sales
+                  Contact us for customized pricing
                   </button>
                 </a>
               </div>

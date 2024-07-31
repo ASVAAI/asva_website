@@ -1,6 +1,6 @@
 import React from 'react'
 import abstract from './Images/Abstract.png'
-import hero1 from './Images/Group 39917 2.png'
+import hero1 from './Images/heroImage2.png'
 import bottom from './Images/bottom.png'
 import { useState } from 'react';
 import prodimg from './Images/image 17.png'
@@ -17,9 +17,13 @@ import "slick-carousel/slick/slick-theme.css";
 import { useRef } from "react";
 
 
+
 const Landing = () => {
 
     const [selectedTab, setSelectedTab] = useState('Inference');
+    
+
+   
 
     const handleClick = (tab) => {
         setSelectedTab(tab);
@@ -65,9 +69,7 @@ const Landing = () => {
 
     const slides = [
         {
-            review: `Another way to improve the readability of a website or app is to use clear and concise
-                            navigation. This helps to make it easy for you to find the information or features that you are
-                            looking for. It also helps to prevent you from becoming lost or overwhelmed.`,
+            review: `ASVA AI's CV Parsing solution significantly streamlined our hiring process. By accurately and efficiently parsing resumes, it enabled us to quickly identify top candidates and reduce the time spent on manual resume reviews. This has been a game-changer for our recruitment team.`,
             logo: (<svg width="123" height="37" viewBox="0 0 123 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_73_5119)">
                     <mask id="mask0_73_5119" mask-type="luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="123" height="37">
@@ -96,9 +98,7 @@ const Landing = () => {
             position: `Associate Director at dukaan.`
         },
         {
-            review: `Another way to improve the readability of a website or app is to use clear and concise
-                            navigation. This helps to make it easy for you to find the information or features that you are
-                            looking for. It also helps to prevent you from becoming lost or overwhelmed.`,
+            review: `Implementing ASVA AI's CV Parsing solution has revolutionized our talent acquisition strategy. The accuracy and speed of the parsing technology allowed us to enhance our candidate selection process, ensuring we find the best fit for our roles in a fraction of the time.`,
             logo: (<svg width="136" height="37" viewBox="0 0 136 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_73_5139)">
                     <path d="M21.013 19.2449L24.4235 22.1699C23.771 23.0813 22.9828 23.8889 22.0855 24.5651C20.9698 25.4384 19.7301 26.1431 18.4064 26.6564C16.9415 27.2246 15.3805 27.5088 13.8077 27.4934C11.4162 27.5351 9.0584 26.9304 6.98681 25.744C5.03444 24.6073 3.43124 22.964 2.34959 20.991C1.20435 18.8925 0.625514 16.5358 0.669305 14.1498C0.653663 12.357 0.977097 10.5773 1.62283 8.9028C2.25173 7.29454 3.18891 5.82251 4.38249 4.56818C5.55886 3.32038 6.98039 2.32492 8.55939 1.64318C10.2659 0.91888 12.106 0.556016 13.9619 0.577809C16.1779 0.495974 18.3751 1.00818 20.3226 2.06056C21.9346 2.99094 23.3315 4.24738 24.4223 5.74831L20.9745 8.79031C20.209 7.66607 19.2333 6.69794 18.1002 5.93843C16.8574 5.18507 15.4171 4.81467 13.9619 4.87419C12.4096 4.82892 10.8819 5.26719 9.59341 6.12743C8.35859 6.98146 7.37924 8.15065 6.75892 9.51144C6.08846 10.9411 5.74761 12.501 5.76118 14.0777C5.74395 15.6169 6.085 17.1391 6.75779 18.526C7.37421 19.8135 8.32519 20.9148 9.51291 21.7166C10.7529 22.5198 12.2094 22.9309 13.6898 22.8955C14.9366 22.9487 16.1797 22.7279 17.3304 22.2486C18.1577 21.879 18.9106 21.3637 19.5527 20.7277L21.0085 19.2449" fill="#182954" />
@@ -118,9 +118,7 @@ const Landing = () => {
             position: `Founder CoinDCX.`
         },
         {
-            review: `Another way to improve the readability of a website or app is to use clear and concise
-                            navigation. This helps to make it easy for you to find the information or features that you are
-                            looking for. It also helps to prevent you from becoming lost or overwhelmed.`,
+            review: `Partnering with ASVA AI has transformed our recruitment efforts. The CV Parsing solution provided by ASVA AI has enabled us to efficiently process a large volume of resumes, pinpointing the most qualified candidates quickly. This has greatly improved our hiring efficiency and the overall quality of our hires.`,
             logo: (<svg width="123" height="37" viewBox="0 0 113 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="0.828125" y="0.491699" width="31.9998" height="32" rx="6.85714" fill="url(#paint0_linear_37_1831)"></rect>
                 <path d="M17.2544 7.92245C17.4821 8.57401 18.0173 9.10566 18.7349 9.29678C19.4525 9.48964 20.1806 9.29677 20.7037 8.84676C21.0216 8.57398 21.2632 8.20564 21.3796 7.77127C21.4769 7.40466 21.4752 7.03632 21.39 6.6923C21.2058 5.95561 20.6376 5.33706 19.8522 5.12509C19.0668 4.91486 18.264 5.16677 17.7375 5.71408C12.6323 5.27102 7.78944 8.53578 6.4167 13.6579C5.56525 16.8323 6.22729 20.057 7.95799 22.5659C8.33382 23.1092 8.75849 23.6195 9.22995 24.0887C9.3699 24.228 9.60196 24.1928 9.70071 24.0218L14.4881 15.7324L19.5135 20.7574C19.5259 20.7698 19.5414 20.7787 19.5584 20.7831C19.6016 20.7945 19.647 20.7756 19.6693 20.7369L24.4049 12.5372C25.3449 14.3563 25.6351 16.5195 25.0617 18.6548C23.9948 22.6354 20.2831 25.1999 16.3248 24.9654C16.0798 24.359 15.562 23.869 14.8808 23.6866C14.1996 23.5042 13.5063 23.6675 12.9902 24.0723C12.634 24.3503 12.3612 24.743 12.2343 25.2138C12.1475 25.5387 12.1388 25.8654 12.1979 26.1747C12.3473 26.9635 12.9346 27.6359 13.7617 27.8566C14.5889 28.079 15.4316 27.7888 15.9564 27.1807C21.0408 27.5959 25.8541 24.3364 27.2216 19.2334C28.073 16.0573 27.411 12.8343 25.6803 10.3254C25.3045 9.78209 24.8798 9.27178 24.4084 8.80262C24.2684 8.66334 24.0363 8.69854 23.9376 8.86955L22.9748 10.5373L19.1241 17.2058L14.2921 12.3742C14.149 12.2312 13.9091 12.2627 13.808 12.438L9.23517 20.3576C8.2951 18.5367 8.00491 16.3753 8.57833 14.2399C9.6383 10.2802 13.3186 7.72087 17.2544 7.92589V7.92245ZM18.4951 6.99636C18.6133 6.55504 19.0668 6.29266 19.5082 6.41081C19.9495 6.52896 20.2119 6.98419 20.0937 7.42377C19.9756 7.86509 19.5221 8.12747 19.0807 8.00933C18.6393 7.89118 18.3769 7.43594 18.4951 6.99636ZM15.1206 25.9853C15.0024 26.4266 14.5489 26.6872 14.1075 26.5708C13.6662 26.4527 13.4038 25.9992 13.5219 25.5579C13.6401 25.1166 14.0936 24.8542 14.535 24.9723C14.9764 25.0905 15.2387 25.544 15.1206 25.9853Z" fill="white"></path>
@@ -178,10 +176,10 @@ const Landing = () => {
                             <p>Greater Security, Privacy and Compliance</p>
                         </div>
                         <h1 className='text-5xl md:text-start font-semibold'>
-                            Elevate Your AI with Smarter <span className='text-violet-700'>Routing</span>
+                            Elevate hiring with our <span className='text-violet-700'>Advanced</span> solutions
                         </h1>
                         <p className='text-start text-gray-600 font-medium text-xl md:w-2/3'>
-                            Discover how our pioneering LLM router can transform your AI operations—increasing efficiency, slashing costs, and simplifying processes.
+                        Discover how our pioneering LLM solutions can transform your hiring operations- increasing efficiency, slashing costs and simplifying hiring.
                         </p>
                     </div>
                     <div className='hidden md:h-3/4 md:w-5/6 md:items-center md:flex md:justify-center md:bg-no-repeat md:bg-cover' style={{ backgroundImage: `url(${abstract})` }}>
@@ -189,14 +187,16 @@ const Landing = () => {
                     </div>
                 </div>
                 <div className="flex justify-start md:flex-row flex-col items-center md:mx-20 mx-10 mt-10 mb-10 gap-6">
-                    <button className="bg-violet-700 border-violet-700 border hover:shadow-gray-400 hover:bg-gradient-to-br from-violet-900 via-violet-600 to-violet-200  hover:shadow-lg flex space-x-3 justify-center items-center text-white font-semibold py-3 px-6 rounded-md transition-all duration-150">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18.0394 2.10195C18.0328 2.06989 18.0171 2.04039 17.9943 2.01694C17.9715 1.99348 17.9424 1.97703 17.9105 1.96952C15.7863 1.44999 10.8793 3.30116 8.21795 5.96054C7.74366 6.43097 7.31117 6.94174 6.92537 7.4871C6.10506 7.41288 5.28475 7.47538 4.58631 7.78007C2.61405 8.64726 2.04022 10.9121 1.88006 11.8844C1.87138 11.9376 1.87509 11.9922 1.89089 12.0438C1.9067 12.0954 1.93417 12.1427 1.97119 12.182C2.0082 12.2213 2.05377 12.2515 2.10435 12.2703C2.15494 12.2892 2.20918 12.2961 2.26287 12.2906L5.42967 11.943C5.43184 12.1818 5.44618 12.4204 5.47264 12.6578C5.48917 12.8219 5.56238 12.9751 5.67967 13.091L6.90584 14.3172C7.02187 14.4346 7.17521 14.5078 7.33944 14.5242C7.57541 14.5505 7.81256 14.5649 8.04998 14.5672L7.70272 17.7312C7.6973 17.7849 7.70428 17.839 7.72312 17.8895C7.74197 17.94 7.77217 17.9855 7.8114 18.0225C7.85063 18.0594 7.89783 18.0869 7.94936 18.1027C8.00089 18.1185 8.05537 18.1223 8.10858 18.1137C9.08123 17.9574 11.3508 17.3836 12.2129 15.4117C12.5176 14.7125 12.5801 13.8965 12.5097 13.0801C13.0567 12.6946 13.569 12.2621 14.0406 11.7875C16.7117 9.13124 18.5512 4.33202 18.0394 2.10195ZM11.6664 8.34648C11.4331 8.11322 11.2742 7.81602 11.2098 7.49246C11.1454 7.16889 11.1784 6.8335 11.3046 6.52869C11.4309 6.22389 11.6447 5.96337 11.919 5.78007C12.1933 5.59678 12.5158 5.49894 12.8457 5.49894C13.1756 5.49894 13.4981 5.59678 13.7724 5.78007C14.0467 5.96337 14.2605 6.22389 14.3867 6.52869C14.513 6.8335 14.546 7.16889 14.4816 7.49246C14.4172 7.81602 14.2583 8.11322 14.025 8.34648C13.8702 8.50155 13.6864 8.62459 13.4841 8.70853C13.2817 8.79248 13.0648 8.83569 12.8457 8.83569C12.6266 8.83569 12.4097 8.79248 12.2073 8.70853C12.005 8.62459 11.8211 8.50155 11.6664 8.34648Z" stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M4.28281 13.75C3.8934 13.7978 3.53113 13.9743 3.25352 14.2516C2.56523 14.9422 2.5 17.5 2.5 17.5C2.5 17.5 5.05937 17.4348 5.74805 16.7457C6.0264 16.4685 6.20323 16.1056 6.25 15.7156" stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
+                    <a href='https://apps.asvaai.com/'>
+                        <button type='button' className="bg-violet-700 border-violet-700 border hover:shadow-gray-400 hover:bg-gradient-to-br from-violet-900 via-violet-600 to-violet-200  hover:shadow-lg flex space-x-3 justify-center items-center text-white font-semibold py-3 px-6 rounded-md transition-all duration-150">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.0394 2.10195C18.0328 2.06989 18.0171 2.04039 17.9943 2.01694C17.9715 1.99348 17.9424 1.97703 17.9105 1.96952C15.7863 1.44999 10.8793 3.30116 8.21795 5.96054C7.74366 6.43097 7.31117 6.94174 6.92537 7.4871C6.10506 7.41288 5.28475 7.47538 4.58631 7.78007C2.61405 8.64726 2.04022 10.9121 1.88006 11.8844C1.87138 11.9376 1.87509 11.9922 1.89089 12.0438C1.9067 12.0954 1.93417 12.1427 1.97119 12.182C2.0082 12.2213 2.05377 12.2515 2.10435 12.2703C2.15494 12.2892 2.20918 12.2961 2.26287 12.2906L5.42967 11.943C5.43184 12.1818 5.44618 12.4204 5.47264 12.6578C5.48917 12.8219 5.56238 12.9751 5.67967 13.091L6.90584 14.3172C7.02187 14.4346 7.17521 14.5078 7.33944 14.5242C7.57541 14.5505 7.81256 14.5649 8.04998 14.5672L7.70272 17.7312C7.6973 17.7849 7.70428 17.839 7.72312 17.8895C7.74197 17.94 7.77217 17.9855 7.8114 18.0225C7.85063 18.0594 7.89783 18.0869 7.94936 18.1027C8.00089 18.1185 8.05537 18.1223 8.10858 18.1137C9.08123 17.9574 11.3508 17.3836 12.2129 15.4117C12.5176 14.7125 12.5801 13.8965 12.5097 13.0801C13.0567 12.6946 13.569 12.2621 14.0406 11.7875C16.7117 9.13124 18.5512 4.33202 18.0394 2.10195ZM11.6664 8.34648C11.4331 8.11322 11.2742 7.81602 11.2098 7.49246C11.1454 7.16889 11.1784 6.8335 11.3046 6.52869C11.4309 6.22389 11.6447 5.96337 11.919 5.78007C12.1933 5.59678 12.5158 5.49894 12.8457 5.49894C13.1756 5.49894 13.4981 5.59678 13.7724 5.78007C14.0467 5.96337 14.2605 6.22389 14.3867 6.52869C14.513 6.8335 14.546 7.16889 14.4816 7.49246C14.4172 7.81602 14.2583 8.11322 14.025 8.34648C13.8702 8.50155 13.6864 8.62459 13.4841 8.70853C13.2817 8.79248 13.0648 8.83569 12.8457 8.83569C12.6266 8.83569 12.4097 8.79248 12.2073 8.70853C12.005 8.62459 11.8211 8.50155 11.6664 8.34648Z" stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M4.28281 13.75C3.8934 13.7978 3.53113 13.9743 3.25352 14.2516C2.56523 14.9422 2.5 17.5 2.5 17.5C2.5 17.5 5.05937 17.4348 5.74805 16.7457C6.0264 16.4685 6.20323 16.1056 6.25 15.7156" stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
 
-                        <p>Try ASVA AI</p>
-                    </button>
+                            <p>Try ASVA AI</p>
+                        </button>
+                    </a>
                     <a href="https://calendly.com/v-inaniyan12/30min">
                         <button className="border-violet-700 border hover:shadow-lg hover:shadow-gray-400 hover:bg-gradient-to-br from-violet-900 via-violet-600 to-violet-200 bg-white hover:bg-violet-500 hover:text-white font-semibold flex justify-center transition-all duration-150 items-center text-violet-700 py-3 px-6 rounded-md">
                             Book Free Consultation
@@ -307,7 +307,7 @@ const Landing = () => {
                         </p>
                     </div>
                     <div className="flex justify-center md:flex-row flex-col items-center gap-6 mb-8">
-                        <a href="#">
+                        <a href="https://www.linkedin.com/company/asva-ai/?viewAsMember=true" target="_blank">
                             <button className="flex justify-center space-x-2 items-center fill-violet-700 hover:fill-white border-violet-700 border hover:shadow-lg hover:shadow-gray-400 hover:bg-gradient-to-br from-violet-900 via-violet-600 to-violet-200 bg-white hover:bg-violet-500 hover:text-white font-semibold transition-all duration-150 text-violet-700 py-3 px-6 rounded-md">
                                 <svg width="21" height="20" className='fill-inherit' viewBox="0 0 21 20" fill="inherit" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M17.3 14.9C17.7 14.2 18 13.4 18 12.5C18 10 16 8 13.5 8C11 8 9 10 9 12.5C9 15 11 17 13.5 17C14.4 17 15.2 16.7 15.9 16.3L19.1 19.5L20.5 18.1L17.3 14.9ZM13.5 15C12.1 15 11 13.9 11 12.5C11 11.1 12.1 10 13.5 10C14.9 10 16 11.1 16 12.5C16 13.9 14.9 15 13.5 15ZM10 18V20C4.48 20 0 15.52 0 10C0 4.48 4.48 0 10 0C14.84 0 18.87 3.44 19.8 8H17.73C17.4181 6.79184 16.8279 5.67338 16.0066 4.73401C15.1853 3.79465 14.1557 3.06042 13 2.59V3C13 4.1 12.1 5 11 5H9V7C9 7.55 8.55 8 8 8H6V10H8V13H7L2.21 8.21C2.08 8.79 2 9.38 2 10C2 14.41 5.59 18 10 18Z" className='hover:fill-inherit' />
@@ -315,7 +315,7 @@ const Landing = () => {
                                 <p>Explore Our AI Solutions</p>
                             </button>
                         </a>
-                        <a href="#">
+                        <a href="https://chat.whatsapp.com/Ez6U7aUdNQ8AXqUHCLXvjr"  target="_blank">
                             <button className="text-lg font-semibold text-gray-500 flex justify-center space-x-3 transition-all duration-150 items-center py-2 px-4">
                                 <p>Join the community</p>
                                 <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
