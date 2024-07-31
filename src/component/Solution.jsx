@@ -904,7 +904,7 @@ const Home = () => {
               Unlocking value: Reveal our parser's benefits.
             </p>
             <p className="text-md text-gray-500 font-medium">
-              With the help of ASva AI Parser, hiring procedures are accelerated
+              With the help of ASVA AI Parser, hiring procedures are accelerated
               and talent acquisition teams are able to work more efficiently to
               identify the best candidates for each job ad.
             </p>
@@ -967,7 +967,7 @@ const Home = () => {
               <h3 className="ml-3 text-xl font-semibold">Accurate</h3>
             </div>
             <p className="text-gray-600">
-              Affinda consistently comes out ahead in competitive tests against
+              ASVA AI consistently comes out ahead in competitive tests against
               other systems.
             </p>
           </div>
@@ -992,7 +992,7 @@ const Home = () => {
               <h3 className="ml-3 text-xl font-semibold">Affordable</h3>
             </div>
             <p className="text-gray-600">
-              With Affinda, you can spend less without sacrificing quality.
+              With ASVA AI, you can spend less without sacrificing quality.
             </p>
           </div>
           <div className="p-6 flex flex-col justify-center bg-white rounded-md shadow-md">
