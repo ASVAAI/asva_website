@@ -21,7 +21,7 @@ function Contact() {
       return;
     }
   
-    fetch('http://127.0.0.1:8000/contact', {
+    fetch('https://api.asvaai.com/contact', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
