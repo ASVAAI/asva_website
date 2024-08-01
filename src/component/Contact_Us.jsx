@@ -15,30 +15,43 @@ function Contact() {
       setError('Please fill in all fields');
       return;
     }
-
+  
     if (!isAgreed) {
       setError('Please agree to the terms of use and privacy policy');
       return;
     }
-
-    // Here you would normally send the form data to your backend server.
-    // For this particular site, we'll just log the data to the console and show an alert.
-    console.log({
-      firstName,
-      lastName,
-      email,
-      subject,
-      message,
-    });
-    alert('Your request has been submitted successfully!');
-    // Reset the form
-    setFirstName('');
-    setLastName('');
-    setEmail('');
-    setSubject('');
-    setMessage('');
-    setIsAgreed(false);
-    setError(null);
+  
+    fetch('http://127.0.0.1:8000/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        first_name: firstName,
+        last_name: lastName,
+        email,
+        subject,
+        message,
+        agreed_to_terms: isAgreed,
+      }),
+    })
+      .then(response => response.json())
+      .then(data => {
+        if (data.message) {
+          alert(data.message);
+          // Reset the form
+          setFirstName('');
+          setLastName('');
+          setEmail('');
+          setSubject('');
+          setMessage('');
+          setIsAgreed(false);
+          setError(null);
+        } else {
+          setError(data.error || 'An error occurred');
+        }
+      })
+      .catch(error => setError('An error occurred'));
   };
 
   return (

@@ -10,7 +10,7 @@ function App() {
                             navigation. This helps to make it easy for you to find the information or features that you are
                             looking for. It also helps to prevent you from becoming lost or overwhelmed.`,
             logo:'./Images/dukan.png',
-            owner:'Jhon Watsone,',
+            owner:'Anurag Meena,',
             position:`Associate Director at dukaan.`
         },
         {

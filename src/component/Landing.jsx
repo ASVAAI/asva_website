@@ -94,7 +94,7 @@ const Landing = () => {
                 </defs>
             </svg>
             ),
-            owner: 'Jhon Watsone,',
+            owner: 'Anurag Meena,',
             position: `Associate Director at dukaan.`
         },
         {
