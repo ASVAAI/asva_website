@@ -72,7 +72,7 @@ const Pricing = () => {
                 <p className=''><span className='font-semibold text-lg text-gray-600'>Customer support:</span> Discord, chat and email.</p>
               </div>
               <div className='flex flex-col items-center justify-center'>
-                <a href="https://calendly.com/v-inaniyan12/30min">
+                <a href="https://apps.asvaai.com">
                   <button className='px-7 py-3 rounded-md text-white bg-violet-700'>
                     Get Started with a free demo
                   </button>

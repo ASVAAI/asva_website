@@ -1,6 +1,6 @@
 import React from 'react'
 import abstract from './Images/Abstract.png'
-import hero1 from './Images/heroImage2.png'
+import hero1 from './Images/moreAdvImg.png'
 import bottom from './Images/bottom.png'
 import { useState } from 'react';
 import prodimg from './Images/image 17.png'
@@ -167,7 +167,7 @@ const Landing = () => {
     return (
         <div id='/' className='w-screen overflow-hidden'>
             <div className='container mx-auto mt-20'>
-                <div className='flex mx-5 justify-center h-auto gap-x-3 items-center mb-20'>
+                <div className='flex mx-5 justify-center h-auto gap-x-3 items-center mb-20 sm:flex-row flex-col'>
                     <div className='flex flex-col gap-y-9 items-start w-full md:w-1/2 h-full'>
                         <div className='flex space-x-2 justify-center items-center border mr-10 border-gray-200 px-5 py-2 rounded-lg'>
                             <svg height='20' width='20' viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -179,10 +179,30 @@ const Landing = () => {
                             Elevate hiring with our <span className='text-violet-700'>Advanced</span> solutions
                         </h1>
                         <p className='text-start text-gray-600 font-medium text-xl md:w-2/3'>
-                        Discover how our pioneering LLM solutions can transform your hiring operations- increasing efficiency, slashing costs and simplifying hiring.
+                        Discover how our pioneering AI solutions can transform your business operations - increasing efficiency, slashing costs and simplifying processes.
                         </p>
+                        <div className='flex flex-row space-x-4'>
+                            
+                            <p className='border border-violet-500 rounded-md px-2 py-1 inline-flex'> 
+                                <svg className='text-gray-400 icon icon-tabler icons-tabler-filled icon-tabler-shield-half' xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor" ><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M11.998 2l.032 .002l.086 .005a1 1 0 0 1 .342 .104l.105 .062l.097 .076l.016 .015l.247 .21a11 11 0 0 0 7.189 2.537l.342 -.01a1 1 0 0 1 1.005 .717a13 13 0 0 1 -9.208 16.25a1 1 0 0 1 -.502 0a13 13 0 0 1 -9.209 -16.25a1 1 0 0 1 1.005 -.717a11 11 0 0 0 7.791 -2.75l.046 -.036l.053 -.041a1 1 0 0 1 .217 -.112l.075 -.023l.036 -.01a1 1 0 0 1 .12 -.022l.086 -.005zm.002 2.296l-.176 .135a13 13 0 0 1 -7.288 2.572l-.264 .006l-.064 .31a11 11 0 0 0 1.064 7.175l.17 .314a11 11 0 0 0 6.49 5.136l.068 .019z" /></svg>
+                                <span className='px-2'>SOC2</span>
+                            </p>
+
+                            <p className='border border-violet-500 rounded-md px-2 py-1 inline-flex'> 
+                                <svg className='text-gray-400 icon icon-tabler icons-tabler-outline icon-tabler-world' xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round" ><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M3.6 9h16.8" /><path d="M3.6 15h16.8" /><path d="M11.5 3a17 17 0 0 0 0 18" /><path d="M12.5 3a17 17 0 0 1 0 18" /></svg>
+                                <span className='px-2'>ISO 27001 </span>
+                            </p>
+
+                            <p className='border border-violet-500 rounded-md px-2 py-1 inline-flex'> 
+                                <svg className='text-gray-500 icon icon-tabler icons-tabler-outline icon-tabler-heart-rate-monitor' xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round" ><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 4m0 1a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1z" /><path d="M7 20h10" /><path d="M9 16v4" /><path d="M15 16v4" /><path d="M7 10h2l2 3l2 -6l1 3h3" /></svg>
+
+                                <span className='px-2'>HIPAA</span>
+                            </p>
+                            
+                        </div>
                     </div>
-                    <div className='hidden md:h-3/4 md:w-5/6 md:items-center md:flex md:justify-center md:bg-no-repeat md:bg-cover' style={{ backgroundImage: `url(${abstract})` }}>
+                    {/* style={{ backgroundImage: `url(${abstract})` }} */}
+                    <div className=' md:h-3/4 md:w-5/6 md:items-center md:flex md:justify-center md:bg-no-repeat md:bg-cover' >
                         <img src={hero1} className='h-2/3 ' alt="" />
                     </div>
                 </div>
