@@ -1,8 +1,10 @@
 import { useState } from "react";
-import {Link , NavLink} from 'react-router-dom'
+import {Link , NavLink, useNavigate} from 'react-router-dom'
+import SolutionDropdown from "../dropComponent/SolutionDropdown";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
@@ -14,6 +16,10 @@ const Navbar = () => {
   const handleSign=()=>{
     alert("Currently Under Developement")
   }
+
+
+
+
 
   return (
     <nav className="bg-white shadow-lg">
@@ -63,9 +69,15 @@ const Navbar = () => {
         </div>
         <div className="hidden text-lg text-gray-400 font-medium md:-ml-20 md:flex space-x-10">
           
-          <NavLink to="/solution" className={({isActive})=>`${isActive ? "border-b-4 rounded-b-md text-gray-600 font-semibold border-b-violet-700" : "text-gray-400"} hover:text-gray-600 hover:text-lg transition-all duration-150`}>
-            Solution
-          </NavLink>
+          {/* <NavLink to="/solution" className={({isActive})=>`${isActive ? "border-b-4 rounded-b-md text-gray-600 font-semibold border-b-violet-700" : "text-gray-400"} hover:text-gray-600 hover:text-lg transition-all duration-150`}>
+            <SolutionDropdown/>
+          </NavLink> */}
+
+          <div>
+            <SolutionDropdown/>
+          </div>
+          
+
           <NavLink to="/pricing" className={({isActive})=>`${isActive ? "border-b-4 rounded-b-md text-gray-600 font-semibold border-b-violet-700" : "text-gray-400"} hover:text-gray-600 hover:text-lg transition-all duration-150`}>
             Pricing
           </NavLink>
@@ -115,9 +127,13 @@ const Navbar = () => {
         <div className="md:hidden bg-white shadow-lg px-4 py-3">
           <div className="flex flex-col justify-center items-center space-y-4">
             
-            <NavLink to="/solution" className={({isActive})=>`${isActive ? "border-b-4 rounded-b-md text-gray-600 font-semibold border-b-violet-700" : "text-gray-400" } transition-all duration-150`}>
-              Solution
-            </NavLink>
+            {/* <NavLink to="/solution" className={({isActive})=>`${isActive ? "border-b-4 rounded-b-md text-gray-600 font-semibold border-b-violet-700" : "text-gray-400" } transition-all duration-150`}>
+              <SolutionDropdown/>
+            </NavLink> */}
+            <div>
+              <SolutionDropdown/>
+            </div>
+            
             <NavLink to="/pricing" className={({isActive})=>`${isActive ? "border-b-4 rounded-b-md text-gray-600 font-semibold border-b-violet-700" : "text-gray-400" } transition-all duration-150`}>
               Pricing
             </NavLink>
@@ -130,14 +146,14 @@ const Navbar = () => {
           </div>
           <div className="flex flex-col space-y-4 mt-5 justify-center items-center">
             <Link
-              to="/login"
+              to="https://apps.asvaai.com/"
               // onClick={handleLogin}
               className="flex justify-center items-center hover:bg-violet-700 hover:text-white text-violet-500 border-2 border-violet-700 h-10 font-medium py-2 px-8 rounded-md transition-all duration-150"
             >
               Login
             </Link>
             <Link
-              to="/signup"
+              to="https://apps.asvaai.com/"
               // onClick={handleSign}
               className="flex justify-center items-center bg-violet-700 hover:bg-violet-500 text-white font-medium py-2 h-10 px-8 rounded-md transition-all duration-"
             >

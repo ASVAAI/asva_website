@@ -12,6 +12,8 @@ const ContactUs = React.lazy(() => import('./component/Contact_Us'));
 const SignUp = React.lazy(()=>import('./pages/SignUpPage'));
 const Login = React.lazy(()=>import('./pages/LoginPage'));
 const BlogPage = React.lazy(()=>import('./pages/BlogPage'))
+const JdParser = React.lazy(()=>import('./component/JdParser/JdParser'))
+const SearchMatch = React.lazy(()=>import('./component/searchandmatch/SearchMatch'))
 
 
 const router = createHashRouter([
@@ -64,6 +66,22 @@ const router = createHashRouter([
         element: (
           <Suspense fallback={<div className='w-full text-center'>Loading...</div>}>
             <BlogPage />
+          </Suspense>
+        ),
+      },
+      {
+        path: 'jdParser',
+        element: (
+          <Suspense fallback={<div className='w-full text-center'>Loading...</div>}>
+            <JdParser />
+          </Suspense>
+        ),
+      },
+      {
+        path: 'searchMatch',
+        element: (
+          <Suspense fallback={<div className='w-full text-center'>Loading...</div>}>
+            <SearchMatch />
           </Suspense>
         ),
       },
