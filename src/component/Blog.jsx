@@ -19,18 +19,46 @@ const Blog = () => {
 
   const Navigate = useNavigate();
 
-  const handleSubmit = (event) => {
+const handleSubmit = async (event) => {
     event.preventDefault();
     if (!firstName || !lastName || !email) {
       setError('Please fill in all fields');
-    } else {
-      setError(null);
-      alert('Subscription successful!');
-      setFirstName('');
-      setLastName('');
-      setEmail('');
+      return;
+    }
+  
+    try {
+      const response = await fetch('https://script.google.com/macros/s/AKfycbwDnzuHI8bB-gZfGLGPomEufHzjzw9pY8OFc3lUB_gEdx-KLekSaCF_NdMBdBY5NKzl/exec', {
+        method: 'POST',
+       
+        body: JSON.stringify({
+          First_Name: firstName,
+          Last_Name: lastName,
+          email: email,
+        }),
+      });
+  
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+  
+      const data = await response.json();
+      if (data.result === 'success') {
+          setFirstName('');
+          setLastName('');
+          setEmail('');
+          setError(null);
+          alert('Successfully Subscribed to NewsLetter');
+        // Optionally, display a success message to the user
+      } else {
+        setError('Failed to add data to Google Sheets');
+      }
+    } catch (error) {
+      setError('An error occurred');
+      console.error('Error:', error);
     }
   };
+  
+  
 
 
   const blogPosts = [
@@ -796,6 +824,7 @@ const Blog = () => {
                   <input
                     type="text"
                     id="firstName"
+                    name= "First_Name"
                     className="appearance-none border w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     value={firstName}
                     onChange={(event) => setFirstName(event.target.value)}
@@ -806,6 +835,7 @@ const Blog = () => {
                   <input
                     type="text"
                     id="lastName"
+                    name="Last_Name"
                     className="appearance-none border w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     value={lastName}
                     onChange={(event) => setLastName(event.target.value)}
@@ -816,9 +846,10 @@ const Blog = () => {
               <input
                 type="email"
                 id="email"
+                name="Email"
                 className=" appearance-none border w-full py-3 px-3 mb-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 value={email}
-                onChange={(event) => setEmail(event.target.value)} F
+                onChange={(event) => setEmail(event.target.value)} 
               />
               {error && <div className="text-red-500">{error}</div>}
               <button

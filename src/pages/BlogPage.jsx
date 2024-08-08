@@ -10,7 +10,7 @@ function BlogPage() {
     // console.log("state from location:", state);
 
     const post = state?.post;
-    console.log(post)
+    // console.log(post)
 
     // const { post } = location.state || {};
     // console.log(post);

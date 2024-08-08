@@ -36,7 +36,7 @@ function JdParser() {
 
             <div className='flex sm:flex-row justify-center items-center flex-col-reverse bg-green-00 mt-10  '>
                 <div className=' bg-red-00  px-4 py-2 flex flex-col w-full self-center '>
-                    <div className='mb-8'><h1 className='sm:text-5xl py-4 text-3xl font-bold'>Choose a <span className='text-violet-700'>Job Description Parser</span> your developers will love you for.</h1></div>
+                    <div className='mb-8'><h1 className='sm:text-5xl py-4 text-3xl font-semibold'>Choose a <span className='text-violet-700'>Job Description Parser</span> your developers will love you for.</h1></div>
                     <div className='space-y-4 sm:text-xl '>
                         <p>ML algorithm understands the context of the Job/Requisition and translates the intent</p>
                         <p>Convert unstructured job content to a structured comparable requirements</p>
@@ -50,17 +50,17 @@ function JdParser() {
 
             <div className='flex sm:flex-row  flex-col gap-y-4 bg-violet-700 justify-center sm:gap-x-16  gap-x-2 items-center py-4 min-h-52 '>
                 <div>
-                    <button  type="button" className='text-white  border-2 rounded-full px-8 py-2 border-white sm:text-4xl hover:bg-white hover:text-violet-700 shadow-2xl hover:shadow-none  hover:translate-x-4 duration-300 '>TRY IT</button>
+                    <button  type="button" className='text-white  border-2 rounded-full px-8 py-2 border-white sm:text-2xl hover:bg-white hover:text-violet-700 shadow-2xl hover:shadow-none  hover:translate-x-4 duration-300 '>TRY IT</button>
                 </div>
                 <div>
-                    <button type='button' className='text-white border-2 rounded-full px-8 py-2 border-white sm:text-4xl  hover:bg-white hover:text-violet-700 shadow-2xl hover:shadow-none  hover:translate-x-4 duration-300'>BOOK A FREE CONSULTATION</button>
+                    <button type='button' className='text-white border-2 rounded-full px-8 py-2 border-white sm:text-2xl  hover:bg-white hover:text-violet-700 shadow-2xl hover:shadow-none  hover:translate-x-4 duration-300'>BOOK A FREE CONSULTATION</button>
                 </div>
             </div>
 
             <div className='flex flex-row '>
                 <div>
                     <div className='flex flex-row justify-center items-center bg-gray-40 py-10'>
-                        <div className='p-10'><h1 className='text-black sm:text-6xl font-semibold text-4xl'>Job Description Parser allows you to do a better job without changing how you do things.</h1></div>
+                        <div className='p-10'><h1 className='text-black sm:text-4xl font-semibold text-3xl'>Job Description Parser allows you to do a better job without changing how you do things.</h1></div>
                     </div>
                     <div className='bg-teal-00 flex sm:flex-row gap-y-8 flex-col justify-center items-center sm:gap-x-8 px-8 py-8 '>
 

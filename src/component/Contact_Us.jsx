@@ -180,8 +180,8 @@ function Contact() {
             </div>
             <div className='flex flex-col gap-y-1'>
               <h2 className="text-xl text-violet-700">Email</h2>
-              <p className="text-gray-700 mb-2">Asvaai@gmail.com</p>
-              <a href="mailto:Asvaai@gmail.com">
+              <p className="text-gray-700 mb-2">viren@asva-ai.com</p>
+              <a href="mailto:viren@asva-ai.com">
                 <button
                   className="bg-gray-100 text-violet-700 hover:bg-gradient-to-br from-violet-900 via-violet-600 to-violet-200 hover:text-white py-2 px-4 rounded-full focus:outline-none focus:shadow-outline transition-all duration-150"
                 >

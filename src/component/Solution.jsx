@@ -601,14 +601,23 @@ const Home = () => {
           Prepare to test the most accurate resume parsing program ever
           developed - the NextGen Resume Parser.
         </p>
-        <div className=" flex justify-center items-center ">
+
+        {/* <div className=" flex justify-center items-center ">
           <div className="lg:h-1/3  mx-10">
             <LottieAnimation />
           </div>
           <div className="lg:h-1/3">
             <img src={img1} alt="" />
           </div>
+        </div> */}
+        <div className=" flex justify-center items-center  sm:w-1/2 sm:h-1/2 ">
+          <div className=" w-full sm:aspect-video ">
+          <iframe className="w-full aspect-video" src="https://www.youtube.com/embed/PP1lcDqE3Yw?si=gbW0a0h-cQECUBB5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
         </div>
+
+
+
         <button className="bg-violet-700 border-violet-700 border hover:shadow-gray-400 hover:bg-gradient-to-br from-violet-900 via-violet-600 to-violet-200  hover:shadow-lg flex space-x-3 justify-center items-center text-white font-semibold py-3 px-6 rounded-md transition-all duration-150">
           Test Your Resume Now
         </button>
