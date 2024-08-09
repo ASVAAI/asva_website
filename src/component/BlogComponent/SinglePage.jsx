@@ -96,7 +96,7 @@ function SinglePage({post}) {
     return (
         <section> 
             <div className='w-full max-w-7xl mx-auto px-4 py-8 bg-teal-40'>
-                <div className='flex flex-col items-center justify-center '>
+                <div className='flex flex-col items-start justify-center '>
 
                     <div className='bg-lime-30 w-full flex flex-row justify-center items-center '>
                         <div>
@@ -119,7 +119,7 @@ function SinglePage({post}) {
                         ))}
                     </div>
 
-                    <div className='bg-yellow-30 text-lg'>
+                    <div className='bg-yellow-00 text-lg '>
                         {post.content && post.content.lists && (
                             <ul className='px-8'>
                                 {post.content.lists.map((listItem, index) => (
