@@ -97,9 +97,13 @@ const App = () => (
   </RouterProvider>
 );
 
+
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-     <div className="h-screen w-full overflow-y-scroll font-titillium_web no-scrollbar">
+  
+     {/* <div className="h-screen w-full overflow-y-scroll font-titillium_web no-scrollbar"> this was previous remove the overflow-y-scroll because it was not letting us go to top page of route page when link from footer is clicked */}
+     <div className="h-screen w-full overflow-y-scroll font-titillium_web no-scrollbar" >
       <App />
     </div>
   </React.StrictMode>

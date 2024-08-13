@@ -244,47 +244,61 @@ const Footer = () => {
 
         <div className="container mx-auto bg-white py-10 ">
           <div className="grid grid-cols-3 md:grid-cols-6 border-b border-gray-200">
-            <div className="px-4 w-1/4 mb-6">
+            <div className="px-4  mb-6">
               <h3 className="text-lg font-bold mb-4">General</h3>
               <ul className="text-gray-400 cursor-pointer font-medium flex flex-col space-y-3">
+                {/* <Link to="/">Home</Link>
                 <Link to="/solution">Product</Link>
                 <Link to="/">Testimonial</Link>
-                <Link to="/contact_us">Contact us</Link>
-                <Link to="/solution">Links</Link>
+                <Link to="/contact_us">Support</Link> */}
+                <a href="https://asvaai.com/#/">Home</a>
+                <a href="https://asvaai.com/#/solution">Product</a>
+                <a href="#">Testimonial</a>
+                <a href="https://asvaai.com/#/contact_us">Support</a>
+                {/* <Link to="/solution">Links</Link> */}
               </ul>
             </div>
 
             <div className="px-4 mb-6">
               <h3 className="text-lg font-bold mb-4">Product</h3>
               <ul className="text-gray-400 cursor-pointer font-medium flex flex-col space-y-3">
-                <Link to="/">Interface</Link>
-                <Link to="/">Fine-tuning</Link>
-                <Link to="/">Hosting</Link>
-                <Link to="/">Monitoring</Link>
+                {/* <Link to="/solution">CV Parser</Link> */}
+                {/* <Link to="/jdParser">JD Parser</Link> */}
+                {/* <Link to="/searchMatch">Search and Match</Link> */}
+                <a href="https://asvaai.com/#/solution">CV Parser</a>
+                <a href="https://asvaai.com/#/jdParser">JD Parser</a>
+                <a href="https://asvaai.com/#/searchMatch">Search and Match</a>
+                {/* <Link to="/">Monitoring</Link> */}
               </ul>
             </div>
 
             <div className="px-4 mb-6">
               <h3 className="text-lg font-bold mb-4">Pricing</h3>
               <ul className="text-gray-400 cursor-pointer font-medium flex flex-col space-y-3">
-                <Link to="/pricing">Fine-tuning Costs</Link>
+                {/* <Link to="/pricing">Fine-tuning Costs</Link>
                 <Link to="/pricing">Dedicated Dep...</Link>
-                <Link to="/pricing">Asva Tiers</Link>
+                <Link to="/pricing">Asva Tiers</Link> */}
+                <a href="https://asvaai.com/#/pricing">Fine-tuning Costs</a>
+                <a href="https://asvaai.com/#/pricing">Dedicated Dep...</a>
+                <a href="https://asvaai.com/#/pricing">Asva Tiers</a>
               </ul>
             </div>
 
             <div className="px-4 mb-6">
               <h3 className="text-lg font-bold mb-4">Blogs</h3>
               <ul className="text-gray-400 cursor-pointer font-medium flex flex-col space-y-3">
-                <Link to="/blog">Case studies</Link>
-                <Link to="/blog">Use cases</Link>
+                {/* <Link to="/blog">Recent Blogs</Link>
+                <Link to="/blog">All Blogs</Link> */}
+                <a href="https://asvaai.com/#/blog">Recent Blogs</a>
+                <a href="https://asvaai.com/#/blog">All Blogs</a>
               </ul>
             </div>
 
             <div className="px-4 mb-6">
               <h3 className="text-lg font-bold mb-4">Contact Us</h3>
               <ul className="text-gray-400 cursor-pointer font-medium flex flex-col space-y-3">
-                <Link to="/contact_us">Email</Link>
+                {/* <Link to="/contact_us">Email</Link> */}
+                <a href="https://asvaai.com/#/contact_us">Email</a>
               </ul>
             </div>
           </div>
