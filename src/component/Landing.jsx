@@ -176,7 +176,7 @@ const Landing = () => {
                             <p>Greater Security, Privacy and Compliance</p>
                         </div>
                         <h1 className='text-5xl md:text-start font-semibold'>
-                            Elevate hiring with our <span className='text-violet-700'>Advanced</span> solutions
+                            Elevate performance with our <span className='text-violet-700'>Advanced</span> solutions
                         </h1>
                         <p className='text-start text-gray-600 font-medium text-xl md:w-2/3'>
                         Discover how our pioneering AI solutions can transform your business operations - increasing efficiency, slashing costs and simplifying processes.
