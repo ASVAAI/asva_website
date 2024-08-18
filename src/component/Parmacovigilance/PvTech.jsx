@@ -37,7 +37,7 @@ function PvTech() {
                             <h1 className='font-semibold text-xl mb-2'>1. In-depth Knowledge of Regulations & Guidelines</h1>
                             <p className=''>Our team is well-versed in the applicable regulations and guidelines,  including 21 CFR Part 11, EU GMP Annex 11, and GAMP 5. We also follow a  risk-based approach recommended by competent authorities to focus  validation activities on high-risk areas, reducing validation efforts  while improving quality.</p>
                         </div>
-                        <div className='self-center max-w-40 py-2 sm:py-0 bg-red-200 sm:w-full'>
+                        <div className='self-center max-w-40 py-2 sm:py-0  sm:w-full'>
                             <img src={img2}/>
                         </div>
                     </div>
@@ -47,7 +47,7 @@ function PvTech() {
                             <h1 className='font-semibold text-xl mb-2'>2. Expertise in Pharmacovigilance Systems</h1>
                             <p className=''>Our validation and pharmacovigilance experts develop and implement  system validation activities based on a deep understanding of PV  operations and industry best practices. Over the years, we have  successfully validated and implemented multiple complex PV systems,  including major safety databases, for various international pharma  companies in the EU regions.</p>
                         </div>
-                        <div className='self-center max-w-40 py-2 sm:py-0 bg-red-200 sm:w-full'>
+                        <div className='self-center max-w-40 py-2 sm:py-0  sm:w-full'>
                             <img src={img3}/>
                         </div>
                     </div>
@@ -57,7 +57,7 @@ function PvTech() {
                             <h1 className='font-semibold text-xl mb-2'>3. Dedicated Project Management</h1>
                             <p className=''>In our commitment to serve our customers, we assign a dedicated project  manager to each client. This individual plays a pivotal role in meeting  business and compliance objectives, regularly updating stakeholders  about project progress. They are also in charge of cost control and  proactive risk management, ensuring project goals are met effectively  and efficiently. The project manager stands as a crucial link between  the client, the project, and our internal team, driving the project from  start to finish.</p>
                         </div>
-                        <div className='self-center max-w-40 py-2 sm:py-0 bg-red-200 sm:w-full '>
+                        <div className='self-center max-w-40 py-2 sm:py-0  sm:w-full '>
                             <img src={img4}/>
                         </div>
                     </div>
