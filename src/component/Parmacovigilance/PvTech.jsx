@@ -15,7 +15,7 @@ function PvTech() {
                 </button>
                 </div>
                 <div className=' bg-green-30 w-full text-center px-2 py-8'>
-                    <h1 className='sm:text-4xl text-3xl  text-black font-bold'>Parmacovigilance Technology</h1>
+                    <h1 className='sm:text-4xl text-3xl  text-black font-bold'>Pharmacovigilance Technology</h1>
                 </div>
                 <div className='text-center px-1 py-'>
                     <p className='text-gray-500 font-semibold sm:text-xl text-base'>Our technology-enabled safety support includes advanced compliance, safety data reporting and analytics</p>

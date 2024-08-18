@@ -153,7 +153,7 @@ function SolutionDropdown() {
 
     {
       ParmaOption: [
-        { value: '/PvTech', label: 'Parmacovigilance' },
+        { value: '/PvTech', label: 'Pharmacovigilance' },
         { value: '/PvLiterature', label: 'Literature Monitoring' },
       ]
     }
@@ -212,7 +212,7 @@ function SolutionDropdown() {
             }
           </div>
           <div>
-            <h1 className='text-2xl font-semibold underline underline-offset-8 px-2 decoration-violet-600 '>Parmacy</h1>
+            <h1 className='text-2xl font-semibold underline underline-offset-8 px-2 decoration-violet-600 '>Pharmacy</h1>
             {
               options[1].ParmaOption.map((option)=>(
                 <div
