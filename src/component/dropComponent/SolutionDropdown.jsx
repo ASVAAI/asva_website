@@ -189,7 +189,8 @@ function SolutionDropdown() {
 
   {/* {options.find(opt => opt.value === currentPath)?.label || 'Select Option'} */}
   {/* {options[0].HrOption.find(opt => opt.value === currentPath)?.label || 'Select Option'} */}
-  {getCurrentLabel()}
+  {/* {getCurrentLabel()} */}
+    Solution
 
   
 </div>
@@ -211,7 +212,7 @@ function SolutionDropdown() {
             }
           </div>
           <div>
-            <h1 className='text-2xl font-semibold underline underline-offset-8 px-2 decoration-violet-600 '>Parma</h1>
+            <h1 className='text-2xl font-semibold underline underline-offset-8 px-2 decoration-violet-600 '>Parmacy</h1>
             {
               options[1].ParmaOption.map((option)=>(
                 <div
