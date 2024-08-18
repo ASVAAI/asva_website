@@ -14,6 +14,8 @@ const Login = React.lazy(()=>import('./pages/LoginPage'));
 const BlogPage = React.lazy(()=>import('./pages/BlogPage'))
 const JdParser = React.lazy(()=>import('./component/JdParser/JdParser'))
 const SearchMatch = React.lazy(()=>import('./component/searchandmatch/SearchMatch'))
+const PvTech = React.lazy(()=>import('./component/Parmacovigilance/PvTech'))
+const PvLiterature = React.lazy(()=>import('./component/Parmacovigilance/PvLiterature'))
 
 
 const router = createHashRouter([
@@ -82,6 +84,22 @@ const router = createHashRouter([
         element: (
           <Suspense fallback={<div className='w-full text-center'>Loading...</div>}>
             <SearchMatch />
+          </Suspense>
+        ),
+      },
+      {
+        path: 'PvTech',
+        element: (
+          <Suspense fallback={<div className='w-full text-center'>Loading...</div>}>
+            <PvTech />
+          </Suspense>
+        ),
+      },
+      {
+        path: 'PvLiterature',
+        element: (
+          <Suspense fallback={<div className='w-full text-center'>Loading...</div>}>
+            <PvLiterature />
           </Suspense>
         ),
       },

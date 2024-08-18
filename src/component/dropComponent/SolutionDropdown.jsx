@@ -119,11 +119,21 @@ function SolutionDropdown() {
   const [currentPath, setCurrentPath] = useState('/solution');
   const [isOpen, setIsOpen] = useState(false);
 
+  // useEffect(() => {
+  //   if (location.pathname === '/solution' || location.pathname === '/jdParser' || location.pathname === '/searchMatch') {
+  //     setCurrentPath(location.pathname);
+  //   }
+  // }, [location]);
+
   useEffect(() => {
-    if (location.pathname === '/solution' || location.pathname === '/jdParser' || location.pathname === '/searchMatch') {
-      setCurrentPath(location.pathname);
+    const allOptions = [...options[0].HrOption, ...options[1].ParmaOption];
+    const foundOption = allOptions.find(opt => opt.value === location.pathname);
+    if (foundOption) {
+      setCurrentPath(foundOption.value);
     }
   }, [location]);
+
+
 
   const handleOptionClick = (value) => {
     setCurrentPath(value);
@@ -132,16 +142,40 @@ function SolutionDropdown() {
   };
 
   const options = [
-    { value: '/solution', label: 'CV Parser' },
-    { value: '/jdParser', label: 'JD Parser' },
-    { value: '/searchMatch', label: 'Search and match' }
+
+    {
+      HrOption:[
+        { value: '/solution', label: 'CV Parser' },
+        { value: '/jdParser', label: 'JD Parser' },
+        { value: '/searchMatch', label: 'Search and match' },
+      ]
+    },
+
+    {
+      ParmaOption: [
+        { value: '/PvTech', label: 'Parmacovigilance' },
+        { value: '/PvLiterature', label: 'Literature Monitoring' },
+      ]
+    }
+  
   ];
 
-  const isActive = options.some(opt => opt.value === location.pathname);
+  // const isActive = options.some(opt => opt.value === location.pathname);
+  // const isActive = options.some(opt => opt.HrOption?.some(item => item.value === location.pathname));
+  const isActive = options.some(opt => 
+    opt.HrOption?.some(item => item.value === location.pathname) ||
+    opt.ParmaOption?.some(item => item.value === location.pathname)
+  );
+
+  const getCurrentLabel = () => {
+    const hrOption = options[0].HrOption.find(opt => opt.value === currentPath);
+    const parmaOption = options[1].ParmaOption.find(opt => opt.value === currentPath);
+    return hrOption?.label || parmaOption?.label || 'Select Option';
+  };
 
   return (
     <div 
-      className="relative"
+      className="relative z-[1]"
       onMouseEnter={() => setIsOpen(true)}
       onMouseLeave={() => setIsOpen(false)}
     >
@@ -153,20 +187,44 @@ function SolutionDropdown() {
                 } hover:text-gray-600 hover:text-lg transition-all duration-150`}
         >
 
-  {options.find(opt => opt.value === currentPath)?.label || 'Select Option'}
+  {/* {options.find(opt => opt.value === currentPath)?.label || 'Select Option'} */}
+  {/* {options[0].HrOption.find(opt => opt.value === currentPath)?.label || 'Select Option'} */}
+  {getCurrentLabel()}
+
   
 </div>
       {isOpen && (
-        <div className="absolute top-full left-0 text-black bg-white border border-gray-300 rounded shadow-lg min-w-44">
-          {options.map((option) => (
-            <div
-              key={option.value}
-              className="px-4 py-2 hover:bg-gray-200 cursor-pointer "
-              onClick={() => handleOptionClick(option.value)}
-            >
-              {option.label}
-            </div>
-          ))}
+        <div className="absolute top-full  -translate-x-1/3 text-black bg-white bg-violet-40 border border-gray-300 rounded shadow-lg  md:w-[60rem] xl:w-[80rem]  font-titillium_web">
+        <div className='flex flex-row justify-start space-x-24 p-4 bg-violet-00'>
+          <div>
+            <h1 className='text-2xl font-semibold underline underline-offset-8 px-2 decoration-violet-600 min-w-28'>HR Tech</h1>
+            {
+              options[0].HrOption.map((option)=>(
+                <div
+                  key={option.value}
+                  className="px-2 mt-4 py-1 hover:bg-gray-200 cursor-pointer rounded transition-colors"
+                  onClick={() => handleOptionClick(option.value)}
+                >
+                  {option.label}
+                </div>
+              ))
+            }
+          </div>
+          <div>
+            <h1 className='text-2xl font-semibold underline underline-offset-8 px-2 decoration-violet-600 '>Parma</h1>
+            {
+              options[1].ParmaOption.map((option)=>(
+                <div
+                  key={option.value}
+                  className=" px-2 mt-4 py-1 hover:bg-gray-200 cursor-pointer rounded transition-colors"
+                  onClick={() => handleOptionClick(option.value)}
+                >
+                  {option.label}
+                </div>
+              ))
+            }
+          </div>
+        </div>
         </div>
       )}
     </div>
