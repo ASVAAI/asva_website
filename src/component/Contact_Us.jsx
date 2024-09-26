@@ -145,6 +145,7 @@ function Contact() {
               </div>
               <button
                 type="submit"
+                onclick="return gtag_report_conversion('https://asvaai.com/#/contact_us')"
                 className="bg-violet-700  hover:bg-gradient-to-br from-violet-900 via-violet-600 to-violet-200 text-white font-bold py-2 px-8 rounded-md focus:outline-none focus:shadow-outline transition-all duration-150"
               >
                 Send
