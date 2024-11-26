@@ -21,7 +21,7 @@ function Contact() {
       return;
     }
   
-    fetch('https://wcd2dihotl.execute-api.eu-north-1.amazonaws.com', {
+    fetch('https://wcd2dihotl.execute-api.eu-north-1.amazonaws.com/contact', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
